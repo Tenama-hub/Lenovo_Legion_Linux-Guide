@@ -1,5 +1,5 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE :  05 JANUARY 2025 ⭐
+# ⭐ LAST UPDATE :  05 JANUARY 2026 ⭐
 A simple how-to-guide for legion products. Can be universal if you know what you are doing. A little opinionated, but it was made with the purpose of making linux easy-to-use and simple for Windows migrants or linux newbies. A backup of my guide from the Legion discord, just in case :)   
 Contribution is always welcomed! Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 # Table of contents
