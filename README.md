@@ -1,31 +1,21 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE :  05 JANUARY 2026 ⭐
+# ⭐ LAST UPDATE : 28 FEBRUARY 2026 ⭐
 A simple how-to-guide for legion products. Can be universal if you know what you are doing. A little opinionated, but it was made with the purpose of making linux easy-to-use and simple for Windows migrants or linux newbies. A backup of my guide from the Legion discord, just in case :)   
 Contribution is always welcomed! Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
-# Table of contents
-### [Distribution recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#distribution-recommendation-1)
-### [Installing Legion tools and drivers](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#installing-legion-tools-and-drivers-1)
-### [Apps & Tools recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#app--tools-recommendation)
-### [Battery saving tools](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#battery-saving-tools-1)
-### [Wine front-ends](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#wine-front-ends-1)
-### [General bugs and fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#general-bugs-and-fixes-1)
-### [General advice and websites recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#general-advice-and-websites-recommendation-1)
 
 # __Distribution recommendation__
-Based on my own experience + community feedback. You are not forced to follow this recommended list.
+Based on my own experience + community feedback. You are not forced to follow this recommended list. Treat this as a way to begin your Linux journey.
 ### Linux Mint ([Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md))
 * Comes with Cinnamon/XFCE/Mate (replicate windows 7/10 layout)
 * Comes with many useful tools OOTB
 * Customizable touchpad gestures like on Windows (Cinnamon only)
-* Fantastic for daily use, especially for beginners
 * Stable release distribution   
 o Lags behind some of the newer technologies and packages, which may cause issues on newer hardware   
 o Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
 ### Fedora ([Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md))
 * Comes with Gnome/Plasma by default. Offers different flavors of desktops too
-* Power saving tools pre-installed
 * Offers the "vanilla" experience that desktop developers have envisioned
-* Solid for gaming and general use
+* Regarded as a solid distro with up to date drivers and emphasis on stability
 * Semi-Rolling release distribution    
 o Codecs & Nvidia drivers are not pre-installed   
 o Requires a little knowledge and maintanence when necessary due to it being semi-rolling
@@ -35,18 +25,8 @@ o Requires a little knowledge and maintanence when necessary due to it being sem
 - Pretty good documentation & huge active base
 - Great for daily use
 - Offers both a rolling release model or LTS   
-o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives   
+o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives  
 o System issues may occur on non-LTS versions
-### CachyOS
-- Comes with Plasma by default. Can choose a different desktop during installation
-- Nvidia drivers pre-installed and pre-configured
-- Packages are optimized based on your hardware, which might increase performance and smoothness
-- GUI package manager and small tools to get you up and running
-- Can convert existing arch distributions (EndeavourOS/Arch) to CachyOS
-- Rolling release distribution   
-o Package optimizations don't apply to Flatpaks/AppImages/Snaps(main reason why they aren't preinstalled)   
-o Not suitable for beginners/those that don't want to rely on the terminal most of the time   
-o Requires a in-depth knowledge of Arch Linux
 ### Bazzite
 - Comes with Plasma/Gnome by default
 - Pre-installed Steam, Nvidia drivers and codecs
@@ -54,7 +34,7 @@ o Requires a in-depth knowledge of Arch Linux
 - Great alternative to SteamOS for handhelds
 - Very hard to break and requires little to no maintenance due to its atomic nature
 - Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick   
-o Apps can only be installed through Flatpaks, AppImages, HomeBrew and Distrobox   
+o Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox   
 o You cannot do system-level changes like on traditional distros   
 o Support leaves more to be desired
 ### ***AVOID!***
@@ -72,6 +52,8 @@ Oracle Linux, Clear Linux or anything made for business purposes. Self explanato
 Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware.
 ### Obscure/outdated distributions
 Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. 
+### The "shiny new distribution" phenomenon 
+Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further.
 ### Hobby/niche distributions
 Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
 
@@ -222,7 +204,6 @@ sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware
 * Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains, unless necessary. Your mileage may vary, as always. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
-* Don't distro-hop because some shiny new distribution hit the web or some distro promises better this & that. Remember : Distributions are just vanilla Linux with packages and such. They are all the same, but maintained differently.
 * Don't bloat your distribution with custom repositories, unless you feel adventurous.
 ### Useful websites
 To check if your games work on linux, these two websites will help you keep yourself updated:   
