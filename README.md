@@ -186,8 +186,10 @@ sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/ed
 sudo rpm-ostree kargs --append-if-missing=video={display_id}:e
 ```
 In case the above commands don't work after running them, run these 2 as well:
-```sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
-sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware```
+```   
+sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
+sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware. 
+```
 
 # __General advice and websites recommendation__
 ### General advice
