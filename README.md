@@ -154,16 +154,6 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.   
 ```sudo nano /etc/sysctl.conf```
 Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
-### Zram optimization
-If your games crash or have unexpected errors due to ram usage, you can try to fiddle with zram. If your distribution of choice uses zram (I know Fedora uses it by default), you can try to tweak it. This config file will compress your ram by the half of its total size (if you have 16gb of ram, 8gb will be compressed.)
-To do so, create a config file using nano:   
-```sudo nano /etc/systemd/zram-generator.conf```   
-Then copy paste the following:   
-```[zram0]
-compression-algorithm=zstd
-zram-size = min(ram / 2, 16384)```
-   
-Save and reboot.
 ### Bad speakers quality 
 If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
 If you don't want to use Easyeffects for your legion laptop, extract the pipewire folder in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. Restart pipewire and change your sound profile in settings.
@@ -196,10 +186,8 @@ sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/ed
 sudo rpm-ostree kargs --append-if-missing=video={display_id}:e
 ```
 In case the above commands don't work after running them, run these 2 as well:
-```
-sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
-sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware
-```
+```sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
+sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware```
 
 # __General advice and websites recommendation__
 ### General advice
