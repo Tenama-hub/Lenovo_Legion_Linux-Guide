@@ -1,5 +1,5 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE : 28 FEBRUARY 2026 ⭐
+# ⭐ LAST UPDATE : 01 MARCH 2026 ⭐
 A simple how-to-guide for legion products. Can be universal if you know what you are doing. A little opinionated, but it was made with the purpose of making linux easy-to-use and simple for Windows migrants or linux newbies. A backup of my guide from the Legion discord, just in case :)   
 Contribution is always welcomed! Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 
@@ -91,6 +91,8 @@ All-in-one flathub package manager (install flatpaks, delete leftover data, mana
 Manage Flatpak permissions. Useful for non-KDE Plasma distributions.
 ### [GearLever](https://flathub.org/en/apps/it.mijorus.gearlever)
 Front-end Appimage manager. Allows "installing" said packages, without needing to fetch them in the file manager.
+### [PeaZip](https://flathub.org/en/apps/io.github.peazip.PeaZip)   
+A fantastic WinRar/7-Zip alternative. 
 # __Battery saving tools__
 The tool that comes bundled with your distribution of choice should be good enough.
 ### WARNING
@@ -154,6 +156,14 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.   
 ```sudo nano /etc/sysctl.conf```
 Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
+### Zram tweaks
+If you have games crashing due to memory leaks, tweaking zram would help ameliorate the problem. To do so, do the following:
+```sudo nano /etc/systemd/zram-generator.conf```
+The add the following:   
+```[zram0]```   
+```compression-algorithm=zstd```   
+```zram-size = min(ram / 2, 16384)```   
+Save & Reboot. What this does is it tweaks zram to compress half of your total ram. While it will fix games crashing due to low ram, it will also add a little performance hit. It shouldn't be noticable at all.
 ### Bad speakers quality 
 If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
 If you don't want to use Easyeffects for your legion laptop, extract the pipewire folder in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. Restart pipewire and change your sound profile in settings.
