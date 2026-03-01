@@ -49,7 +49,7 @@ o System issues may occur on non-LTS versions
 - Comes with Plasma/Gnome by default
 - Pre-installed Steam, Nvidia drivers and codecs
 - Can be used for any use case, not just gaming
-- Great alternative to SteamOS for handhelds
+- Great alternative to SteamOS
 - Very hard to break and requires little to no maintenance due to its atomic nature
 - Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick   
 o Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox   
