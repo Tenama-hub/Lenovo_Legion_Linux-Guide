@@ -1,7 +1,25 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
 # ⭐ LAST UPDATE : 01 MARCH 2026 ⭐
-A simple how-to-guide for legion products. Can be universal if you know what you are doing. A little opinionated, but it was made with the purpose of making linux easy-to-use and simple for Windows migrants or linux newbies. A backup of my guide from the Legion discord, just in case :)   
-Contribution is always welcomed! Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
+Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
+
+# __General advice and websites recommendation__
+### General advice
+* **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
+* Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
+* Keep your system clean and up to date. Don't bloat it with useless tools or scripts that will cause more harm than good.
+* Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
+* Don't rely on custom kernels to give you significant performance gains, unless necessary. Your mileage may vary, as always. Using the kernel bundled with your distribution is more than enough.
+* Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
+* Don't bloat your distribution with custom repositories, unless you feel adventurous.
+### Useful websites
+To check if your games work on linux, these two websites will help you keep yourself updated:   
+https://areweanticheatyet.com/   
+https://www.protondb.com/   
+https://appdb.winehq.org/
+### Websites for linux news (desktops, distributions etc)
+https://9to5linux.com/   
+https://gamingonlinux.com/
+
 
 # __Distribution recommendation__
 Based on my own experience + community feedback. You are not forced to follow this recommended list. Treat this as a way to begin your Linux journey.
@@ -55,7 +73,8 @@ Avoid distributions maintained by randoms/single developer, that are **"too good
 ### The "shiny new distribution" phenomenon 
 Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further.
 ### Hobby/niche distributions
-Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
+Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.   
+Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, CachyOS, PikaOS etc.
 
 # __Installing Legion tools and drivers__ 
 ### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
@@ -148,7 +167,7 @@ Allows installing, configuring games & apps in one-in-all tool. Comes with featu
 ### [Heroic game launcher](https://heroicgameslauncher.com/) 
 Allows installing & configuring games & apps in one-in-all tool from Epic Games Store, Humble, Amazon, GoG, Origin, Ubisoft Connect and local games/backups.
 ### [Faugus-Launcher](https://github.com/Faugus/faugus-launcher) 
-A WIP project that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher) and Proton-GE. It's not as feature complete as Lutris, but it gets the job done without extra shenanigans. [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
+A simple, easy to use launcher that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher) and Proton-GE. It's not as feature complete as Lutris, but it gets the job done without extra shenanigans. [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
 Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools, as well as a special prefix with dotnet frameworks preinstalled. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive.
 
 # __General bugs and fixes__
@@ -156,7 +175,7 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.   
 ```sudo nano /etc/sysctl.conf```
 Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
-### Zram tweaks
+### Zram tweaks (Make sure your distributon has zram enabled by running ```zramctl``` in the terminal!)
 If you have games crashing due to memory leaks, tweaking zram would help ameliorate the problem. To do so, do the following:
 ```sudo nano /etc/systemd/zram-generator.conf```
 The add the following:   
@@ -200,21 +219,3 @@ In case the above commands don't work after running them, run these 2 as well:
 sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
 sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware. 
 ```
-
-# __General advice and websites recommendation__
-### General advice
-* **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
-* Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
-* Keep your system clean and up to date. Don't bloat it with useless tools or scripts that will cause more harm than good.
-* Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
-* Don't rely on custom kernels to give you significant performance gains, unless necessary. Your mileage may vary, as always. Using the kernel bundled with your distribution is more than enough.
-* Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
-* Don't bloat your distribution with custom repositories, unless you feel adventurous.
-### Useful websites
-To check if your games work on linux, these two websites will help you keep yourself updated:   
-https://areweanticheatyet.com/   
-https://www.protondb.com/   
-https://appdb.winehq.org/
-### Websites for linux news (desktops, distributions etc)
-https://9to5linux.com/   
-https://gamingonlinux.com/
