@@ -74,7 +74,7 @@ Avoid distributions maintained by randoms/single developer, that are **"too good
 Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further.
 ### Hobby/niche distributions
 Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.   
-Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, CachyOS, PikaOS etc.
+Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
 
 # __Installing Legion tools and drivers__ 
 ### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
