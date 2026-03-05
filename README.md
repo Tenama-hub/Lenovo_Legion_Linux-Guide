@@ -167,7 +167,8 @@ Allows installing, configuring games & apps in one-in-all tool. Comes with featu
 ### [Heroic game launcher](https://heroicgameslauncher.com/) 
 Allows installing & configuring games & apps in one-in-all tool from Epic Games Store, Humble, Amazon, GoG, Origin, Ubisoft Connect and local games/backups.
 ### [Faugus-Launcher](https://github.com/Faugus/faugus-launcher) 
-A simple, easy to use launcher that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher) and Proton-GE. It's not as feature complete as Lutris, but it gets the job done without extra shenanigans. [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
+A simple, easy to use launcher that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher) and Proton-GE. It's not as feature complete as Lutris, but it gets the job done without extra shenanigans. 
+### [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
 Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools, as well as a special prefix with dotnet frameworks preinstalled. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive.
 
 # __General bugs and fixes__
