@@ -6,8 +6,7 @@ Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa).
 ### General advice
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
 * Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
-* Keep your system clean and up to date. Don't bloat it with useless tools or scripts that will cause more harm than good.
-* Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
+* Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains, unless necessary. Your mileage may vary, as always. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
 * Don't bloat your distribution with custom repositories, unless you feel adventurous.
@@ -23,58 +22,108 @@ https://gamingonlinux.com/
 
 # __Distribution recommendation__
 Based on my own experience + community feedback. You are not forced to follow this recommended list. Treat this as a way to begin your Linux journey.
-### Linux Mint ([Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md))
+<details>
+<summary>Linux Mint</summary>
+
+\
+{[Official Website](https://linuxmint.com/)} | {[Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md)}
 * Comes with Cinnamon/XFCE/Mate (replicate windows 7/10 layout)
 * Comes with many useful tools OOTB
 * Customizable touchpad gestures like on Windows (Cinnamon only)
 * Stable release distribution   
-o Lags behind some of the newer technologies and packages, which may cause issues on newer hardware   
-o Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
-### Fedora ([Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md))
+> (-) Lags behind some of the newer technologies and packages, which may cause issues on newer hardware.\
+> (-) Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
+</details>
+<details>
+<summary>Fedora</summary>
+
+\
+{[Official Website](https://fedoraproject.org/)} | {[Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md)}
 * Comes with Gnome/Plasma by default. Offers different flavors of desktops too
 * Offers the "vanilla" experience that desktop developers have envisioned
 * Regarded as a solid distro with up to date drivers and emphasis on stability
 * Semi-Rolling release distribution    
-o Codecs & Nvidia drivers are not pre-installed   
-o Requires a little knowledge and maintanence when necessary due to it being semi-rolling
-### Ubuntu ([Post-install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/ubuntu_post_install_guide.md))
-- Comes with Gnome by default. Can use other variants with different desktops
+> (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.
+</details>
+<details>
+<summary>Ubuntu / Kubuntu</summary>
+
+\
+{[Official Website for Ubuntu](https://ubuntu.com/download)} | {[Official Website for Kubuntu](https://kubuntu.org/)} | {[Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/ubuntu_post_install_guide.md)}
+- Comes with Gnome (Ubuntu) or KDE Plasma (Kubuntu) by default. Can use other variants with different desktops
 - Pre-install Nvidia drivers and codecs during the installation process
 - Pretty good documentation & huge active base
 - Great for daily use
 - Offers both a rolling release model or LTS   
-o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives  
-o System issues may occur on non-LTS versions
-### Bazzite
+> (-) Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives.\
+> (-) System issues may occur on non-LTS versions.
+</details>
+<details>
+<summary>Bazzite</summary>
+
+\
+{[Official Website](https://bazzite.gg/)}
 - Comes with Plasma/Gnome by default
 - Pre-installed Steam, Nvidia drivers and codecs
 - Can be used for any use case, not just gaming
 - Great alternative to SteamOS
 - Very hard to break and requires little to no maintenance due to its atomic nature
 - Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick   
-o Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox   
-o You cannot do system-level changes like on traditional distros   
-o Support leaves more to be desired
-### ***AVOID!***
-### Debian (**Unless you use Debian Testing/Sid**)
-Despite being extremely stable with little to no breakages, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly. You can use it if you know what you are doing.
-### Pop!_OS (**for now**)
-The new Cosmic desktop variant lacks critical fixes for gaming and it is still in alpha.
-### SteamOS 
-Doesn't have an nvidia alternative and is not finished for **non-handheld devices**. If you REALLY need something similar, use Bazzite.
-### Manjaro
-It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Although, there have been less incident reports of broken systems over the recent years.
-### Business-related distributions
-Oracle Linux, Clear Linux or anything made for business purposes. Self explanatory.
-### Hacking/Cybersecurity distributions
-Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware.
-### Obscure/outdated distributions
-Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. 
-### The "shiny new distribution" phenomenon 
-Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further.
-### Hobby/niche distributions
-Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.   
-Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
+> (-) Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox.\
+> (-) You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.\
+> (-) Support outside their official Discord leaves more to be desired.
+</details>
+
+# __DISTRIBUTIONS TO AVOID!__
+<details>
+<summary>Debian stable branch</summary>
+
+\
+  **Unless you use Debian sid/testing, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly and packages tend to get outdated pretty quick.**
+</details>
+<details>
+<summary>Pop!_OS</summary>
+
+\
+  **The new Cosmic desktop variant lacks critical fixes for gaming and it is still currently in alpha. For now, there are better options.**
+</details>
+<details>
+<summary>SteamOS</summary>
+
+\
+  **Doesn't have an nvidia alternative and is not finished for **non-handheld devices**. If you REALLY need something similar, use Bazzite.**
+</details>
+<details>
+<summary>Manjaro</summary>
+
+\
+  **It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. There are much better options out there.**
+</details>
+<details>
+<summary>Business-related distributions</summary>
+
+\
+  **Oracle Linux, Clear Linux or anything made for business purposes. Self explanatory.**
+</details>
+<details>
+<summary>Hacking/Cybersecurity distributions</summary>
+
+\
+  **Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware.**
+</details>
+<details>
+<summary>Obscure/outdated distributions</summary>
+
+\
+  **Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1.**
+</details>
+<details>
+<summary>Hobby/niche distributions</summary>
+
+\
+  **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.   
+Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.**
+</details>
 
 # __Installing Legion tools and drivers__ 
 ### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
@@ -92,9 +141,9 @@ If you use Plasma and you want to have a tool that gives you the important optio
     - [ebuild](https://gpo.zugaina.org/sys-firmware/lenovolegionlinux)
 - [**NixOS**](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=lenovo-legion)
 ## Manual Install Module
-The project's [github page](https://github.com/johnfanv2/LenovoLegionLinux?tab=readme-ov-file#bulb-instructions) should give you enough instructions to aid you in the process.
+The project's [github page](https://github.com/johnfanv2/LenovoLegionLinux?tab=readme-ov-file#bulb-instructions) should give you enough instructions to aid you in the process.\
 After it's done, to check if module is built and installed correctly, enter the following command
-```sudo lsmod |grep legion_laptop```.
+```sudo lsmod |grep legion_laptop```\
 The output should show that legion_laptop and platform profile modules are loaded.
 
 # __App & Tools recommendation__
@@ -111,12 +160,12 @@ Manage Flatpak permissions. Useful for non-KDE Plasma distributions.
 ### [GearLever](https://flathub.org/en/apps/it.mijorus.gearlever)
 Front-end Appimage manager. Allows "installing" said packages, without needing to fetch them in the file manager.
 ### [PeaZip](https://flathub.org/en/apps/io.github.peazip.PeaZip)   
-A fantastic WinRar/7-Zip alternative. 
+A fantastic WinRar/7-Zip alternative.
 # __Battery saving tools__
-The tool that comes bundled with your distribution of choice should be good enough.
-### WARNING
-* Some of the tools will not work together with the rest (exceptions may apply). Make sure you remove all the tools besides the one you want to currently use.
-* Do **NOT** use configuration files from laptops you don't **OWN**. This may cause severe issues with your hardware! You have been warned.
+The tool that comes bundled with your distribution of choice should be good enough. For advanced users only!
+> [!WARNING]
+> Some of the tools will not work together with the rest (exceptions may apply). Make sure you remove all the tools besides the one you want to currently use.\
+> Do **NOT** use configuration files from laptops you don't **OWN**. This may cause severe issues with your hardware! You have been warned.
 ### Tuned 
 A mix between power profiles daemon and TLP. Easily integrated with all desktops that feature Power profiles switching and can be customized to your needs. Used on Fedora & Bazzite by default.
 [More info](https://github.com/redhat-performance/tuned)
@@ -172,51 +221,72 @@ A simple, easy to use launcher that takes advantage of [UMU](https://github.com/
 Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools, as well as a special prefix with dotnet frameworks preinstalled. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive.
 
 # __General bugs and fixes__
-### System swappiness (if you have >= 16GB ram)
-Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.   
-```sudo nano /etc/sysctl.conf```
-Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
-### Zram tweaks (Make sure your distributon has zram enabled by running ```zramctl``` in the terminal!)
-If you have games crashing due to memory leaks, tweaking zram would help ameliorate the problem. To do so, do the following:
-```sudo nano /etc/systemd/zram-generator.conf```
-The add the following:   
-```[zram0]```   
-```compression-algorithm=zstd```   
-```zram-size = min(ram / 2, 16384)```   
-Save & Reboot. What this does is it tweaks zram to compress half of your total ram. While it will fix games crashing due to low ram, it will also add a little performance hit. It shouldn't be noticable at all.
-### Bad speakers quality 
-If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
-If you don't want to use Easyeffects for your legion laptop, extract the pipewire folder in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. Restart pipewire and change your sound profile in settings.
-### Bad laptop mic quality
-Set your microphone volume to 30-50%, then install this [noise cancelling module](https://github.com/Rikorose/DeepFilterNet/blob/main/ladspa/README.md) or use EasyEffects
-### Refresh rate/ VRR not working
-Some screen panels will force you to use either the highest or the lowest refresh rate (even keep you at the highest resolution). Edid.bin tells your screen what resolutions and refresh rates it supports. This is a problem that affects some panels due to generic drivers being used instead of the ones provided by the screen providers.
-### WARNING
-* **UNDER NO CIRCUMSTANCE, DO NOT INCREASE/DECREASE THE RESOLUTION OF YOUR SCREEN/REFRESH RATE PAST YOUR SPECS! DOING SO WILL CAUSE SEVERE ISSUES**
-1. In WINDOWS, download the CRU tool. Open it, then click on **EXPORT**. Save the file as edid.bin. (If you are able to switch between the highest and lowest refresh rate but you can't use VRR in Linux, extract the edid file from your distro and add what is needed)
+<details>
+<summary>System swappiness (if you have >= 16GB ram)</summary>
+  
+* Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.
+* ```sudo nano /etc/sysctl.conf```
+* Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
+</details>
+<details>
+<summary>Zram tweaks</summary>
+
+* (Make sure your distributon has zram enabled by running ```zramctl``` in the terminal!)
+* If you have games crashing due to memory leaks, tweaking zram would help ameliorate the problem. To do so, do the following:
+* ```sudo nano /etc/systemd/zram-generator.conf```
+* Inside the new configuration file, paste this:   
+```[zram0]```\
+```compression-algorithm=zstd```\
+```zram-size = min(ram / 2, 16384)```\
+* Save & Reboot. What this does is it tweaks zram to compress half of your total ram. While it will fix games crashing due to low ram, it will also add a little performance hit. It shouldn't be noticable at all.
+</details>
+<details>
+<summary>Bad speakers quality</summary>
+
+* If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
+* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. Restart pipewire and change your sound profile in settings.
+</details>
+<details>
+<summary>Bad laptop mic quality</summary>
+
+* Set your microphone volume to 30-50%, then install this [noise cancelling module](https://github.com/Rikorose/DeepFilterNet/blob/main/ladspa/README.md) or use EasyEffects\NoiseTorch.
+</details>
+
+
+
+<details>
+<summary>Refresh rate/ VRR not working</summary>
+  
+* Some screen panels will force you to use either the highest or the lowest refresh rate (even keep you at the highest resolution). Edid.bin tells your screen what resolutions and refresh rates it supports. This is a problem that affects some panels due to generic drivers being used instead of the ones provided by the screen providers.
+1. In WINDOWS, download the CRU tool. Open it, then click on **EXPORT**. Save the file as edid.bin. (Make sure that you can see your refresh rates in Windows too. Otherwise, add them by yourself, then
 2. Copy the file to a usb drive and boot back to linux.
 3. Open a terminal and type the following commands:
 ```cd /lib/firmware && sudo mkdir edid && sudo cp (path to file)/edid.bin /lib/firmware/edid```
 4. To make sure your edid file is recognized, use the following:   
 ```for p in /sys/class/drm/*/status; do con=${p%/status}; echo -n "${con#*/card?-}: "; cat $p; done```
    
-For the below commands, replace [display_id] with the output of the connected display from the command ran earlier.
+For the below commands, replace {display_id} with the output of the connected display from the command in number 4.
 ### For systemd-boot
 ```sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e'```
 ### For GRUB:
 ```sudo nano /etc/default/grub```, add ```drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e``` to **GRUB_CMDLINE_LINUX_DEFAULT**
 
-Then run either ```sudo update-grub``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```
+Then run either ```sudo update-grub``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```    
 Reboot.   
-For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following:
+### For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following (make sure you replace {display_id} with the output from number 4, as well as path-to-file with the actual path):
 ```
 sudo mkdir -p /etc/firmware/edid
-sudo cp edid.bin /etc/firmware/edid
+sudo cp (path-to-file)/edid.bin /etc/firmware/edid
 sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin
 sudo rpm-ostree kargs --append-if-missing=video={display_id}:e
 ```
-In case the above commands don't work after running them, run these 2 as well:
+In case it hasn't fixed yet, run these 2 as well:
 ```   
 sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
-sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware. 
+sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware 
 ```
+</details>
+
+
+> [!WARNING]
+> UNDER NO CIRCUMSTANCE, DO NOT INCREASE/DECREASE THE RESOLUTION OF YOUR SCREEN/REFRESH RATE PAST YOUR SPECS! DOING SO WILL CAUSE SEVERE ISSUES!
