@@ -1,5 +1,5 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE : 01 MARCH 2026 ⭐
+# ⭐ LAST UPDATE : 07 MARCH 2026 ⭐
 Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 
 # __General advice and websites recommendation__
