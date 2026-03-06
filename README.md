@@ -3,14 +3,13 @@
 Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 
 # __General advice and websites recommendation__
-### General advice
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
 * Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
 * Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains, unless necessary. Your mileage may vary, as always. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
 * Don't bloat your distribution with custom repositories, unless you feel adventurous.
-### Useful websites
+  
 To check if your games work on linux, these two websites will help you keep yourself updated:   
 https://areweanticheatyet.com/   
 https://www.protondb.com/   
@@ -18,8 +17,6 @@ https://appdb.winehq.org/
 ### Websites for linux news (desktops, distributions etc)
 https://9to5linux.com/   
 https://gamingonlinux.com/
-
-
 # __Distribution recommendation__
 Based on my own experience + community feedback. You are not forced to follow this recommended list. Treat this as a way to begin your Linux journey.
 <details>
