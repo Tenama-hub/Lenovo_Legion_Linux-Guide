@@ -8,7 +8,6 @@ Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa).
 * Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
-* Don't bloat your distribution with custom repositories, unless you feel adventurous.
 * Don't use a "rolling-release" proton version, especially for games where they rely on shader caching (NOT just the steam's vulkan shaders). There is a "bug" where shaders don't remember your proton version, thus they reset.
   
 To check if your games work on linux, these two websites will help you keep yourself updated:   
@@ -43,6 +42,22 @@ Based on my own experience + community feedback. You are not forced to follow th
 * Semi-Rolling release distribution    
 > (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.
 </details>
+
+<details>
+<summary>OpenSUSE Tumbleweed/summary>
+
+\
+{[Official Website](https://www.opensuse.org/)} | {[Post-Install Guide(reference video)](https://youtu.be/0T02xd9qVmM?si=_op_kdpDzYjRkK5F)}
+* Comes with Gnome/Plasma by default.
+* Regarded as a solid distro with up to date drivers and emphasis on stability, especially since it's a rolling release distro
+* Pretty good documentation
+* Snapper installed & configured by default. Allows you to roll back a bad update
+* RPM Based (like Fedora) & European (r/BuyFromEU)
+* Offers both a rolling release model (Tumbleweed) or LTS (Leap)   
+> (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.\
+> (-) Bundled sysadmin GUI settings can be confusing for beginners/starters. Not a huge deal.
+</details>
+<summary>Ubuntu / Kubuntu</summary>
 <details>
 <summary>Ubuntu / Kubuntu</summary>
 
