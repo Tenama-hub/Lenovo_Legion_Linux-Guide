@@ -6,9 +6,10 @@ Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa).
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
 * Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
 * Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
-* Don't rely on custom kernels to give you significant performance gains, unless necessary. Your mileage may vary, as always. Using the kernel bundled with your distribution is more than enough.
+* Don't rely on custom kernels to give you significant performance gains. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
 * Don't bloat your distribution with custom repositories, unless you feel adventurous.
+* Don't use a "rolling-release" proton version, especially for games where they rely on shader caching (NOT just the steam's vulkan shaders). There is a "bug" where shaders don't remember your proton version, thus they reset.
   
 To check if your games work on linux, these two websites will help you keep yourself updated:   
 https://areweanticheatyet.com/   
@@ -118,7 +119,9 @@ Based on my own experience + community feedback. You are not forced to follow th
 <summary>Hobby/niche distributions</summary>
 
 \
-  **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.   
+  **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.
+
+  \
 Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.**
 </details>
 
