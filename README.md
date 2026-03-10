@@ -135,9 +135,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 <summary>Hobby/niche distributions</summary>
 
 \
-  **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.
-
-  \
+  **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.\
 Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.**
 </details>
 
