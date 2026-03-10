@@ -44,7 +44,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 </details>
 
 <details>
-<summary>OpenSUSE Tumbleweed/summary>
+<summary>OpenSUSE Tumbleweed</summary>
 
 \
 {[Official Website](https://www.opensuse.org/)} | {[Post-Install Guide(reference video)](https://youtu.be/0T02xd9qVmM?si=_op_kdpDzYjRkK5F)}
@@ -57,7 +57,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 > (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.\
 > (-) Bundled sysadmin GUI settings can be confusing for beginners/starters. Not a huge deal.
 </details>
-<summary>Ubuntu / Kubuntu</summary>
+
 <details>
 <summary>Ubuntu / Kubuntu</summary>
 
@@ -71,6 +71,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 > (-) Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives.\
 > (-) System issues may occur on non-LTS versions.
 </details>
+
 <details>
 <summary>Bazzite</summary>
 
