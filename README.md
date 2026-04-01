@@ -1,5 +1,5 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE : 07 MARCH 2026 ⭐
+# ⭐ LAST UPDATE : 01 APRIL 2026 ⭐
 Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 
 # __General advice and websites recommendation__
@@ -8,7 +8,7 @@ Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa).
 * Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
-* Don't use a "rolling-release" proton version, especially for games where they rely on shader caching (NOT just the steam's vulkan shaders). There is a "bug" where shaders don't remember your proton version, thus they reset.
+* Don't rely too much on AI tools to debug your problems, unless you know and read carefully the fixes it gives you instead of bluntly copy-pasting the solutions.
   
 To check if your games work on linux, these two websites will help you keep yourself updated:   
 https://areweanticheatyet.com/   
@@ -72,6 +72,8 @@ Based on my own experience + community feedback. You are not forced to follow th
 > (-) System issues may occur on non-LTS versions.
 </details>
 
+## If you feel adventurous...
+
 <details>
 <summary>Bazzite</summary>
 
@@ -88,9 +90,27 @@ Based on my own experience + community feedback. You are not forced to follow th
 > (-) Support outside their official Discord leaves more to be desired.
 </details>
 
-# __DISTRIBUTIONS TO AVOID!__
 <details>
-<summary>Debian stable branch</summary>
+<summary>CachyOS</summary>
+
+\
+{[Official Website](https://cachyos.org/)} | {[Post-Install guide](https://wiki.cachyos.org/configuration/post_install_setup/)}
+- Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)
+- Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)
+- One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed)
+- A functional software center that allows installing AUR and Flatpaks too
+- Bleeding edge distribution based on Arch Linux, which means you will get frequent updates
+- "Optimized" for your hardware, meaning you can get a boost in performance
+- Great documentation (wiki.cachyos.org)
+> (-) The optimizations done to installed packages can be a hit or miss, doesn't increase gaming performance significantly. \
+> (-) Updates can go bad due to it's bleeding edge nature.\
+> (-) AUR isn't the safeset place to get your packages from.\
+> (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.
+</details>
+
+# __Distributions to avoid using!__
+<details>
+<summary>Debian (stable branch)</summary>
 
 \
   **Unless you use Debian sid/testing, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly and packages tend to get outdated pretty quick.**
@@ -111,7 +131,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 <summary>Manjaro</summary>
 
 \
-  **It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. There are much better options out there.**
+  **It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there.**
 </details>
 <details>
 <summary>Business-related distributions</summary>
@@ -226,13 +246,13 @@ If you want to use it to optimize the hardware power usage (power-profiles/auto-
 # __Wine front-ends__
 [Wine](https://www.winehq.org/) is a special tool that allows running Windows apps in Linux. This sparked the creation of proton, that is actively used for games.
 ### [Lutris](https://lutris.net/)
-Allows installing, configuring games & apps in one-in-all tool. Comes with features like automatic installation of games through community patches and importing game libraries from steam, GOG and Epic Games Store. Several scripts are outdated and could cause issues, some still relying on the discontinued WINE-GE runner.
+Allows installing, configuring games & apps in one-in-all tool. Comes with features like automatic installation of games through community patches and importing game libraries from steam, GOG and Epic Games Store. Avoid using install scripts as all of them rely on the outdated wine-ge runner.
 ### [Heroic game launcher](https://heroicgameslauncher.com/) 
 Allows installing & configuring games & apps in one-in-all tool from Epic Games Store, Humble, Amazon, GoG, Origin, Ubisoft Connect and local games/backups.
 ### [Faugus-Launcher](https://github.com/Faugus/faugus-launcher) 
-A simple, easy to use launcher that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher) and Proton-GE. It's not as feature complete as Lutris, but it gets the job done without extra shenanigans. 
+A simple, easy to use launcher that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher). It's not as feature complete as Lutris, but it gets the job done without extra shenanigans.
 ### [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
-Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools, as well as a special prefix with dotnet frameworks preinstalled. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive.
+Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools, as well as a special prefix with dotnet frameworks preinstalled. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive. Use this as a last resort.
 
 # __General bugs and fixes__
 <details>
@@ -258,7 +278,8 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 <summary>Bad speakers quality</summary>
 
 * If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
-* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. Restart pipewire and change your sound profile in settings.
+* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username.\
+  Restart pipewire and change your sound profile in settings.
 </details>
 <details>
 <summary>Bad laptop mic quality</summary>
