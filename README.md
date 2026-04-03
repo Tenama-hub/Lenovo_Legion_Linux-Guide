@@ -1,16 +1,16 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE : 01 APRIL 2026 ⭐
+# ⭐ LAST UPDATE : 03 APRIL 2026 ⭐
 Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 
 # __General advice and websites recommendation__
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
 * Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
-* Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
+* Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular, mainstream, well-known and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains. Using the kernel bundled with your distribution is more than enough.
-* Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
-* Don't rely too much on AI tools to debug your problems, unless you know and read carefully the fixes it gives you instead of bluntly copy-pasting the solutions.
+* Don't run scripts that claim to give you more performance, especially if they were not tested or come from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
+* Don't rely too much on AI tools to debug your problems, unless you know and read carefully what it gives you instead of blindly copy-pasting.
   
-To check if your games work on linux, these two websites will help you keep yourself updated:   
+To check if your games work on linux, these websites will help you keep yourself updated:   
 https://areweanticheatyet.com/   
 https://www.protondb.com/   
 https://appdb.winehq.org/
@@ -18,19 +18,7 @@ https://appdb.winehq.org/
 https://9to5linux.com/   
 https://gamingonlinux.com/
 # __Distribution recommendation__
-Based on my own experience + community feedback. You are not forced to follow this recommended list. Treat this as a way to begin your Linux journey.
-<details>
-<summary>Linux Mint</summary>
-
-\
-{[Official Website](https://linuxmint.com/)} | {[Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md)}
-* Comes with Cinnamon/XFCE/Mate (replicate windows 7/10 layout)
-* Comes with many useful tools OOTB
-* Customizable touchpad gestures like on Windows (Cinnamon only)
-* Stable release distribution   
-> (-) Lags behind some of the newer technologies and packages, which may cause issues on newer hardware.\
-> (-) Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
-</details>
+Based on my own experience + community feedback. Treat this as a way to begin your Linux journey. These are mainstream, well-known, supported linux distributions with huge userbases and documentation.
 <details>
 <summary>Fedora</summary>
 
@@ -39,6 +27,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 * Comes with Gnome/Plasma by default. Offers different flavors of desktops too
 * Offers the "vanilla" experience that desktop developers have envisioned
 * Regarded as a solid distro with up to date drivers and emphasis on stability
+* Great documentation, large user base and security configured OOTB (secure boot needs to be tweaked manually. Check my post-install guide)
 * Semi-Rolling release distribution    
 > (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.
 </details>
@@ -66,10 +55,22 @@ Based on my own experience + community feedback. You are not forced to follow th
 - Comes with Gnome (Ubuntu) or KDE Plasma (Kubuntu) by default. Can use other variants with different desktops
 - Pre-install Nvidia drivers and codecs during the installation process
 - Pretty good documentation & huge active base
-- Great for daily use
+- Secure boot configured OOTB
 - Offers both a rolling release model or LTS   
-> (-) Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives.\
+> (-) Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse/Bazaar from Flathub) as alternatives.\
 > (-) System issues may occur on non-LTS versions.
+</details>
+<details>
+<summary>Linux Mint</summary>
+
+\
+{[Official Website](https://linuxmint.com/)} | {[Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md)}
+* Comes with Cinnamon/XFCE/Mate (replicate windows 7/10 layout)
+* Bundles many useful tools OOTB
+* Customizable touchpad gestures like on Windows (Cinnamon only)
+* Stable release distribution   
+> (-) Lags behind some of the newer technologies and packages, which may cause issues on newer hardware.\
+> (-) Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
 </details>
 
 ## If you feel adventurous...
@@ -83,11 +84,27 @@ Based on my own experience + community feedback. You are not forced to follow th
 - Pre-installed Steam, Nvidia drivers and codecs
 - Can be used for any use case, not just gaming
 - Great alternative to SteamOS
-- Very hard to break and requires little to no maintenance due to its atomic nature
-- Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick   
-> (-) Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox.\
+- Very hard to break and requires little to no maintenance due to its "atomic" nature
+- [Atomic distribution](https://docs.bazzite.gg/General/FAQ/#steamos-is-based-on-arch-linux-so-why-use-fedora-atomic-desktop) based on Fedora. Updates can be done in the background and are relatively quick   
+> (-) Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox/Kontainer.\
 > (-) You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.\
 > (-) Support outside their official Discord leaves more to be desired.
+</details>
+
+<details>
+<summary>EndeavourOS</summary>
+
+\
+{[Official Website](https://endeavouros.com/)}
+- Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)
+- Pure Arch Linux experience, with several tools and tuning done to get you up and running
+- Bleeding edge distribution based on Arch Linux, which means you will get frequent updates
+- Nvidia drivers pre-installed
+- Great documentation & community
+> (-) More terminal focused, as it doesn't come bundled with a GUI package manager.\
+> (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
+> (-) AUR isn't the safeset place to get your packages from.\
+> (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
 </details>
 
 <details>
@@ -97,18 +114,18 @@ Based on my own experience + community feedback. You are not forced to follow th
 {[Official Website](https://cachyos.org/)} | {[Post-Install guide](https://wiki.cachyos.org/configuration/post_install_setup/)}
 - Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)
 - Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)
-- One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed)
+- One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed) + nvidia drivers pre-installed
 - A functional software center that allows installing AUR and Flatpaks too
 - Bleeding edge distribution based on Arch Linux, which means you will get frequent updates
 - "Optimized" for your hardware, meaning you can get a boost in performance
 - Great documentation (wiki.cachyos.org)
-> (-) The optimizations done to installed packages can be a hit or miss, doesn't increase gaming performance significantly. \
-> (-) Updates can go bad due to it's bleeding edge nature.\
+> (-) The so called "optimizations" can be a hit or miss, doesn't increase gaming performance significantly. They only do under certain workflows.\
+> (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
 > (-) AUR isn't the safeset place to get your packages from.\
-> (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.
+> (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
 </details>
 
-# __Distributions to avoid using!__
+# __Distributions to avoid!__
 <details>
 <summary>Debian (stable branch)</summary>
 
