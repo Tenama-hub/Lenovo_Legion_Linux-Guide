@@ -1,6 +1,6 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
-# ⭐ LAST UPDATE : 03 APRIL 2026 ⭐
-Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
+# ⭐ LAST UPDATE : 14 APRIL 2026 ⭐
+Feel free to join our [discord group as well](https://discord.gg/legionseries). 
 
 # __General advice and websites recommendation__
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
