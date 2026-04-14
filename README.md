@@ -5,7 +5,7 @@ Feel free to join our [discord group as well](https://discord.gg/legionseries).
 # __General advice and websites recommendation__
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
 * Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
-* Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular, mainstream, well-known and come from reputable sources. You can game on any distro and apply the same tweaks to a "non-gaming" distribution.
+* Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular, mainstream, well-known and come from reputable sources. You can game on any distro and apply the same tweaks on a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested or come from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
 * Don't rely too much on AI tools to debug your problems, unless you know and read carefully what it gives you instead of blindly copy-pasting.
@@ -43,7 +43,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 * Snapper installed & configured by default. Allows you to roll back a bad update
 * RPM Based (like Fedora) & European (r/BuyFromEU)
 * Offers both a rolling release model (Tumbleweed) or LTS (Leap)   
-> (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.\
+> (-) Codecs & Nvidia drivers are not pre-installed (follow the reference video). Sometimes a hassle to get them both up and running optimally.\
 > (-) Bundled sysadmin GUI settings can be confusing for beginners/starters. Not a huge deal.
 </details>
 
@@ -115,11 +115,11 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 - Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)
 - Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)
 - One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed) + nvidia drivers pre-installed
-- A functional software center that allows installing AUR and Flatpaks too
+- A functional software center that allows installing AUR and Flatpaks
 - Bleeding edge distribution based on Arch Linux, which means you will get frequent updates
-- "Optimized" for your hardware, meaning you can get a boost in performance
+- Optimized for your hardware, meaning you can get a boost in performance
 - Great documentation (wiki.cachyos.org)
-> (-) The so called "optimizations" can be a hit or miss, doesn't increase gaming performance significantly. They only do under certain workflows.\
+> (-) "Optimizations" only apply to certain specific scenarios (Gaming isn't one of them).\
 > (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
 > (-) AUR isn't the safeset place to get your packages from.\
 > (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
