@@ -11,12 +11,6 @@ This can be easily done through the provided package manager. If you want to use
 If you can't do it for some reason, install the driver by using the command below, then wait 10-15 minutes before rebooting!!!   
 ```sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y```
 ### Install additional codecs
-```dnf swap ffmpeg-free ffmpeg --allowerasing -y && dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y && dnf update @sound-and-video -y ```   
-If you use Intel:   
-```sudo dnf install intel-media-driver -y```   
-If you use AMD:   
-```sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y && sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld -y```   
-If you have an Nvidia gpu:   
-```sudo dnf install libva-nvidia-driver -y```   
+Follow the [official RPMFusion guide](https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29) 
 ### Enable NTSYNC (helps improve performance in games. Make sure to run them with Proton-GE!)
 ```echo ntsync | sudo tee /etc/modules-load.d/ntsync.conf && sudo modprobe ntsync```
