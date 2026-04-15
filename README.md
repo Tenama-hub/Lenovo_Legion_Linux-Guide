@@ -41,10 +41,10 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 * Regarded as a solid distro with up to date drivers and emphasis on stability, especially since it's a rolling release distro
 * Pretty good documentation
 * Snapper installed & configured by default. Allows you to roll back a bad update
-* RPM Based (like Fedora) & European (r/BuyFromEU)
+* RPM Based (like Fedora),European (r/BuyFromEU) and automatically optimizes packages based on hardware
 * Offers both a rolling release model (Tumbleweed) or LTS (Leap)   
 > (-) Codecs & Nvidia drivers are not pre-installed (follow the reference video). Sometimes a hassle to get them both up and running optimally.\
-> (-) Bundled sysadmin GUI settings can be confusing for beginners/starters. Not a huge deal.
+> (-) Bundled sysadmin GUI settings can be confusing for beginners.
 </details>
 
 <details>
