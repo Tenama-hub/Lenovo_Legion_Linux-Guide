@@ -1,5 +1,7 @@
 # Fedora post-install guide
 If you are lazy and you want to build your own install script, [click here](https://nattdf.streamlit.app/)
+A secondary option is the [install app by LinuxGamerLife](https://github.com/linuxgamerlife/lgl-system-loadout). Avoid installing the CachyOS kernel unless you absolutely need it.
+
 
 Cherry-picked from [this website](https://rpmfusion.org/Howto). Honorable mentions: [Noble guide](https://github.com/wz790/Fedora-Noble-Setup)
 ### Enable 3rd party repositories (MANDATORY!)
