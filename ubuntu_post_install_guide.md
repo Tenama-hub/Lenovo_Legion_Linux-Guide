@@ -7,8 +7,6 @@
 ```sudo apt install ubuntu-restricted-extras fonts-crosextra-caladea fonts-crosextra-carlito```
 ### Install Nvidia drivers
 If the drivers did not install during setup, use **Additional drivers** app to install the Nvidia drivers. Always use the recommended version!
-### Enable NTSYNC (helps improve performance in games. Make sure to run them with Proton-GE!)
-```echo ntsync | sudo tee /etc/modules-load.d/ntsync.conf && sudo modprobe ntsync```
 
 # Optional tweaks.
 ### For Kubuntu: Get rid of Snaps
