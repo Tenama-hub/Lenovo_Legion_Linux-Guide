@@ -14,5 +14,3 @@ If you can't do it for some reason, install the driver by using the command belo
 ```sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y```
 ### Install additional codecs
 Follow the [official RPMFusion guide](https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29) 
-### Enable NTSYNC (helps improve performance in games. Make sure to run them with Proton-GE!)
-```echo ntsync | sudo tee /etc/modules-load.d/ntsync.conf && sudo modprobe ntsync```
