@@ -29,7 +29,8 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 * Regarded as a solid distro with up to date drivers and emphasis on stability
 * Great documentation, large user base and security configured OOTB (secure boot needs to be tweaked manually. Check my post-install guide)
 * Semi-Rolling release distribution    
-> (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.
+> (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.\
+> (-) No secure boot post-install. Needs to be signed manually.
 </details>
 
 <details>
@@ -40,6 +41,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 * Comes with Gnome/Plasma by default.
 * Regarded as a solid distro with up to date drivers and emphasis on stability, especially since it's a rolling release distro
 * Pretty good documentation
+* Secure boot configured
 * Snapper installed & configured by default. Allows you to roll back a bad update
 * RPM Based (like Fedora),European (r/BuyFromEU) and automatically optimizes packages based on hardware
 * Offers both a rolling release model (Tumbleweed) or LTS (Leap)   
@@ -55,7 +57,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 - Comes with Gnome (Ubuntu) or KDE Plasma (Kubuntu) by default. Can use other variants with different desktops
 - Pre-install Nvidia drivers and codecs during the installation process
 - Pretty good documentation & huge active base
-- Secure boot configured OOTB
+- Secure boot configured
 - Offers both a rolling release model or LTS   
 > (-) Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse/Bazaar from Flathub) as alternatives.\
 > (-) System issues may occur on non-LTS versions.
@@ -70,7 +72,8 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 * Customizable touchpad gestures like on Windows (Cinnamon only)
 * Stable release distribution   
 > (-) Lags behind some of the newer technologies and packages, which may cause issues on newer hardware.\
-> (-) Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
+> (-) Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)\
+> (-) No secure boot post-install. Needs to be signed manually.
 </details>
 
 ## If you feel adventurous...
@@ -88,7 +91,8 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 - [Atomic distribution](https://docs.bazzite.gg/General/FAQ/#steamos-is-based-on-arch-linux-so-why-use-fedora-atomic-desktop) based on Fedora. Updates can be done in the background and are relatively quick   
 > (-) Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox/Kontainer.\
 > (-) You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.\
-> (-) Support outside their official Discord leaves more to be desired.
+> (-) Support outside their official Discord leaves more to be desired.\
+> (-) No secure boot post-install. Needs to be signed manually (can be done through Ujust)
 </details>
 
 <details>
@@ -105,6 +109,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 > (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
 > (-) AUR isn't the safeset place to get your packages from.\
 > (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
+> (-) No secure boot post-install. Needs to be signed manually.
 </details>
 
 <details>
@@ -123,6 +128,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 > (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
 > (-) AUR isn't the safeset place to get your packages from.\
 > (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
+> (-) No secure boot post-install. Needs to be signed manually.
 </details>
 
 # __Distributions to avoid!__
