@@ -6,10 +6,8 @@
 ### Additional multimedia codecs, proprietary drivers & fonts for better compatibility with Microsoft Office documents
 ```sudo apt install ubuntu-restricted-extras fonts-crosextra-caladea fonts-crosextra-carlito```\
 if you use Kubuntu, replace ```ubuntu-restricted-extras``` with ```kubuntu-restricted-extras```
-
 ### Install Nvidia drivers
 If the drivers did not install during setup, use **Additional drivers** app to install the Nvidia drivers. Always use the recommended version!
-
 # Optional tweaks.
-### For Kubuntu: Get rid of Snaps
+### For Kubuntu (can be used for Ubuntu as well, but proceed with caution!): Get rid of Snaps
 Use the scripts provided in [this guide](https://gitlab.com/scripts94/kubuntu-get-rid-of-snap)
