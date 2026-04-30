@@ -156,12 +156,6 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
   **It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there.**
 </details>
 <details>
-<summary>Business-related distributions</summary>
-
-\
-  **Oracle Linux, Clear Linux or anything made for business purposes. Self explanatory.**
-</details>
-<details>
 <summary>Hacking/Cybersecurity distributions</summary>
 
 \
@@ -178,7 +172,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 
 \
   **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.\
-Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.**
+  Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.**
 </details>
 
 # __Installing Legion tools and drivers__ 
@@ -293,15 +287,15 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 * Inside the new configuration file, paste this:   
 ```[zram0]```\
 ```compression-algorithm=zstd```\
-```zram-size = min(ram / 2, 16384)```\
+```zram-size = min(ram / 2, 16384)```
 * Save & Reboot. What this does is it tweaks zram to compress half of your total ram. While it will fix games crashing due to low ram, it will also add a little performance hit. It shouldn't be noticable at all.
 </details>
 <details>
 <summary>Bad speakers quality</summary>
 
 * If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
-* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username.\
-  Restart pipewire and change your sound profile in settings.
+* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. This method may cause issues with external speakers, so be wary!\
+  **Restart pipewire and change your sound profile in settings!**
 </details>
 <details>
 <summary>Bad laptop mic quality</summary>
@@ -322,11 +316,11 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 4. To make sure your edid file is recognized, use the following:   
 ```for p in /sys/class/drm/*/status; do con=${p%/status}; echo -n "${con#*/card?-}: "; cat $p; done```
    
-For the below commands, replace {display_id} with the output of the connected display from the command in number 4.
+For the below commands, replace **{display_id}** with the output of the connected display from the command in number 4.
 ### For systemd-boot
 ```sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e'```
 ### For GRUB:
-```sudo nano /etc/default/grub```, add ```drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e``` to **GRUB_CMDLINE_LINUX_DEFAULT**
+```sudo nano /etc/default/grub```, add ```drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e``` to GRUB_CMDLINE_LINUX_DEFAULT
 
 Then run either ```sudo update-grub``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```    
 Reboot.   
@@ -337,7 +331,7 @@ sudo cp (path-to-file)/edid.bin /etc/firmware/edid
 sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin
 sudo rpm-ostree kargs --append-if-missing=video={display_id}:e
 ```
-In case it hasn't fixed yet, run these 2 as well:
+**In case it hasn't fixed yet, run these 2 as well:**
 ```   
 sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
 sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware 
@@ -347,3 +341,10 @@ sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware
 
 > [!WARNING]
 > UNDER NO CIRCUMSTANCE, DO NOT INCREASE/DECREASE THE RESOLUTION OF YOUR SCREEN/REFRESH RATE PAST YOUR SPECS! DOING SO WILL CAUSE SEVERE ISSUES!
+
+<details>
+<summary>Fix laptop speakers not working (Gen 10 Legions)</summary>
+  
+* You will require [this special driver](https://github.com/marco-giunta/legion-pro7-gen10-audio), until it gets pushed in the kernel.
+
+</details>
