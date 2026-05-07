@@ -1,13 +1,10 @@
 # Ubuntu post-install guide
-### Add Flatpak support
-```sudo apt install flatpak && flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo```
-### Add AppImage support
-```sudo apt install libfuse2 -y```
-### Additional multimedia codecs, proprietary drivers & fonts for better compatibility with Microsoft Office documents
-```sudo apt install ubuntu-restricted-extras fonts-crosextra-caladea fonts-crosextra-carlito```\
-if you use Kubuntu, replace ```ubuntu-restricted-extras``` with ```kubuntu-restricted-extras```
-### Install Nvidia drivers
-If the drivers did not install during setup, use **Additional drivers** app to install the Nvidia drivers. Always use the recommended version!
-# Optional tweaks.
-### For Kubuntu (can be used for Ubuntu as well, but proceed with caution!): Get rid of Snaps
-Use the scripts provided in [this guide](https://gitlab.com/scripts94/kubuntu-get-rid-of-snap)
+
+
+| Tweak Name | Command/Link/Path |
+| ------------- | ------------- |
+| **Add Flatpak support** | `sudo apt install flatpak && flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo` |
+| **Add AppImage support** | `sudo apt install libfuse2 -y` |
+| **Additional multimedia codecs, proprietary drivers & fonts for better compatibility with Microsoft Office documents** | `sudo apt install ubuntu-restricted-extras fonts-crosextra-caladea fonts-crosextra-carlito`<br>If you use Kubuntu, replace `ubuntu-restricted-extras` with `kubuntu-restricted-extras` |
+| **Install Nvidia drivers** | If the drivers did not install during setup, use **Additional drivers** app to install the Nvidia drivers. Always use the recommended version! |
+| **Get rid of Snaps (Kubuntu, but can be used on Ubuntu too. Just be cautious!)** | Use the scripts provided in [this guide](https://gitlab.com/scripts94/kubuntu-get-rid-of-snap). This is an optional step. |
