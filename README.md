@@ -67,7 +67,7 @@ The output should show that legion_laptop and platform profile modules are loade
 | App  | Description |
 | ------------- | ------------- |
 | [Bazaar](https://flathub.org/en/apps/io.github.kolunmi.Bazaar) | Front-end for managing Flatpak packages, if your distribution's package manager is not good enough for this use case. Used by default on Bazzite. |
-| [Retrodeck](https://flathub.org/en/apps/net.retrodeck.retrodeck) | An all-in-one emulation front-end that comes with the most popular emulators, pre-configured out of the box. You can configure and add BIOS files for each component through its configurator app. |
+| [Retrodeck](https://flathub.org/en/apps/net.retrodeck.retrodeck) | An all-in-one emulation front-end that ships with the most popular emulators. You can configure and add BIOS files for each component through its configurator app. |
 | [EasyEffects](https://flathub.org/en/apps/com.github.wwmm.easyeffects) | Front-end equalizer for managing your microphone and speakers. Useful for filtering microphone background noise and improving overall audio quality. |
 | [Warehouse](https://flathub.org/en/apps/io.github.flattool.Warehouse) | All-in-one Flathub package manager for installing Flatpaks, deleting leftover data, and managing Flatpak data. A more technical alternative to Bazaar. |
 | [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) | Manage Flatpak permissions. Especially useful on non-KDE Plasma distributions. |
