@@ -18,178 +18,43 @@ https://9to5linux.com/
 https://gamingonlinux.com/
 # __Distribution recommendation__
 Based on my own experience + community feedback. Treat this as a way to begin your Linux journey. These are mainstream, well-known, supported linux distributions with huge userbases and documentation.
-<details>
-<summary>Fedora</summary>
-
-\
-{[Official Website](https://fedoraproject.org/)} | {[Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md)}
-* Comes with Gnome/Plasma by default. Offers different flavors of desktops too
-* Offers the "vanilla" experience that desktop developers have envisioned
-* Regarded as a solid distro with up to date drivers and emphasis on stability
-* Great documentation, large user base and security configured OOTB (secure boot needs to be tweaked manually. Check my post-install guide)
-* Semi-Rolling release distribution    
-> (-) Codecs & Nvidia drivers are not pre-installed (follow the post-install guide). Sometimes a hassle to get them both up and running optimally.\
-> (-) No secure boot post-install. Needs to be signed manually.
-</details>
-
-<details>
-<summary>OpenSUSE Tumbleweed</summary>
-
-\
-{[Official Website](https://www.opensuse.org/)} | {[Post-Install Guide(reference video)](https://youtu.be/0T02xd9qVmM?si=_op_kdpDzYjRkK5F)}
-* Comes with Gnome/Plasma by default.
-* Regarded as a solid distro with up to date drivers and emphasis on stability, especially since it's a rolling release distro
-* Pretty good documentation
-* Secure boot configured
-* Snapper installed & configured by default. Allows you to roll back a bad update
-* RPM Based (like Fedora),European (r/BuyFromEU) and automatically optimizes packages based on hardware
-* Offers both a rolling release model (Tumbleweed) or LTS (Leap)   
-> (-) Codecs & Nvidia drivers are not pre-installed (follow the reference video). Sometimes a hassle to get them both up and running optimally.\
-> (-) Bundled sysadmin GUI settings can be confusing for beginners.
-</details>
-
-<details>
-<summary>Ubuntu / Kubuntu</summary>
-
-\
-{[Official Website for Ubuntu](https://ubuntu.com/download)} | {[Official Website for Kubuntu](https://kubuntu.org/)} | {[Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/ubuntu_post_install_guide.md)}
-- Comes with Gnome (Ubuntu) or KDE Plasma (Kubuntu) by default. Can use other variants with different desktops
-- Pre-install Nvidia drivers and codecs during the installation process
-- Pretty good documentation & huge active base
-- Secure boot configured
-- Offers both a rolling release model or LTS   
-> (-) Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse/Bazaar from Flathub) as alternatives.\
-> (-) System issues may occur on non-LTS versions.
-</details>
-<details>
-<summary>Linux Mint</summary>
-
-\
-{[Official Website](https://linuxmint.com/)} | {[Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md)}
-* Comes with Cinnamon/XFCE/Mate (replicate windows 7/10 layout)
-* Bundles many useful tools OOTB
-* Customizable touchpad gestures like on Windows (Cinnamon only)
-* Stable release distribution   
-> (-) Lags behind some of the newer technologies and packages, which may cause issues on newer hardware.\
-> (-) Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)\
-> (-) No secure boot post-install. Needs to be signed manually.
-</details>
+| Name | Pros | Cons | Links |
+| ------------- | ------------- | ------------- | ------------- |
+| **[Fedora](https://fedoraproject.org/)** | • Comes with GNOME or KDE Plasma by default, alongside multiple desktop flavors.<br>• Provides a near-vanilla Linux desktop experience.<br>• Up-to-date drivers with strong focus on stability.<br>• Excellent documentation and large community support.<br>• Security-focused defaults.<br>• Semi-rolling release model. | • Nvidia drivers and codecs require manual setup.<br>• Secure Boot setup requires manual signing post-install. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md) |
+| **[OpenSUSE Tumbleweed](https://www.opensuse.org/)** | • Ships with GNOME or KDE Plasma by default.<br>• Rolling-release distro with strong stability focus.<br>• Secure Boot configured by default.<br>• Includes Snapper for easy system rollback after bad updates.<br>• Excellent hardware package optimizations.<br>• Available in both rolling-release (Tumbleweed) and LTS (Leap) variants.<br>• Strong documentation. | • Nvidia drivers and codecs require manual setup.<br>• YaST/sysadmin tools may feel overwhelming for beginners. | [Post-Install Guide](https://youtu.be/0T02xd9qVmM?si=_op_kdpDzYjRkK5F) |
+| **[Ubuntu](https://ubuntu.com/download) <br> / <br> [Kubuntu](https://kubuntu.org/)** | • Ubuntu ships with GNOME, Kubuntu with KDE Plasma.<br>• Nvidia drivers and codecs can be installed during setup.<br>• Huge user base and strong documentation.<br>• Secure Boot configured by default.<br>• Available in both rolling-style interim releases and LTS versions. | • Heavy focus on Snap packages, which may cause compatibility or performance concerns for some users.<br>• Non-LTS releases may occasionally introduce system instability. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/ubuntu_post_install_guide.md) |
+| **[Linux Mint](https://linuxmint.com/)** | • Comes with Cinnamon/XFCE/Mate (layout resemble Windows 7/10).<br>• Ships with many useful tools pre-installed.<br>• Cinnamon edition supports customizable touchpad gestures.<br>• Stable release model focused on reliability. | • Uses older package bases and technologies, which may affect newer hardware support.<br>• Still relies on X11, which is behind certain modern features (dual screens may not work as intended for example).<br>• Secure Boot setup requires manual signing post-install. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md) |
 
 ## If you feel adventurous...
-
-<details>
-<summary>Bazzite</summary>
-
-\
-{[Official Website](https://bazzite.gg/)}
-- Comes with Plasma/Gnome by default
-- Pre-installed Steam, Nvidia drivers and codecs
-- Can be used for any use case, not just gaming
-- Great alternative to SteamOS
-- Very hard to break and requires little to no maintenance due to its "atomic" nature
-- [Atomic distribution](https://docs.bazzite.gg/General/FAQ/#steamos-is-based-on-arch-linux-so-why-use-fedora-atomic-desktop) based on Fedora. Updates can be done in the background and are relatively quick   
-> (-) Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox/Kontainer.\
-> (-) You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.\
-> (-) Support outside their official Discord leaves more to be desired.\
-> (-) No secure boot post-install. Needs to be signed manually (can be done through Ujust)
-</details>
-
-<details>
-<summary>EndeavourOS</summary>
-
-\
-{[Official Website](https://endeavouros.com/)}
-- Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)
-- Pure Arch Linux experience, with several tools and tuning done to get you up and running
-- Bleeding edge distribution based on Arch Linux, which means you will get frequent updates
-- Nvidia drivers pre-installed
-- Great documentation & community
-> (-) More terminal focused, as it doesn't come bundled with a GUI package manager.\
-> (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
-> (-) AUR isn't the safeset place to get your packages from.\
-> (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
-> (-) No secure boot post-install. Needs to be signed manually.
-</details>
-
-<details>
-<summary>CachyOS</summary>
-
-\
-{[Official Website](https://cachyos.org/)} | {[Post-Install guide](https://wiki.cachyos.org/configuration/post_install_setup/)}
-- Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)
-- Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)
-- One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed) + nvidia drivers pre-installed
-- A functional software center that allows installing AUR and Flatpaks
-- Bleeding edge distribution based on Arch Linux, which means you will get frequent updates
-- Optimized for your hardware, meaning you can get a boost in performance
-- Great documentation (wiki.cachyos.org)
-> (-) "Optimizations" only apply to certain specific scenarios (Gaming isn't one of them).\
-> (-) Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.\
-> (-) AUR isn't the safeset place to get your packages from.\
-> (-) Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.\
-> (-) No secure boot post-install. Needs to be signed manually.
-</details>
+| Name | Pros | Cons | Links |
+| ------------- | ------------- | ------------- | ------------- |
+| **[Bazzite](https://bazzite.gg/)** | • Comes with Plasma/Gnome by default<br>• Pre-installed Steam, Nvidia drivers and codecs<br>• Can be used for any use case, not just gaming<br>• Great alternative to SteamOS<br>• Very hard to break and requires little to no maintenance due to its "atomic" nature<br>• Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick | • Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox/Kontainer.<br>• You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.<br>• Support outside their official Discord leaves more to be desired.<br>• No secure boot post-install. Needs to be signed manually (can be done through Ujust) |  |
+| **[EndeavourOS](https://endeavouros.com/)** | • Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)<br>• Pure Arch Linux experience, with several tools and tuning done to get you up and running<br>• Bleeding edge distribution based on Arch Linux, which means you will get frequent updates<br>• Nvidia drivers pre-installed<br>• Great documentation & community | • More terminal focused, as it doesn't come bundled with a GUI package manager.<br>• Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.<br>• AUR isn't the safeset place to get your packages from.<br>• Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.<br>• No secure boot post-install. Needs to be signed manually. | |
+| **[CachyOS](https://cachyos.org/)** | • Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)<br>• Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)<br>• One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed) + nvidia drivers pre-installed<br>• A functional software center that allows installing AUR and Flatpaks<br>• Bleeding edge distribution based on Arch Linux, which means you will get frequent updates<br>• Optimized for your hardware, meaning you can get a boost in performance<br>• Great documentation | • "Optimizations" only apply to certain specific scenarios (Gaming isn't one of them).<br>• Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.<br>• AUR isn't the safeset place to get your packages from.<br>• Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.<br>• No secure boot post-install. Needs to be signed manually. | [Post-Install guide](https://wiki.cachyos.org/configuration/post_install_setup/) |
 
 # __Distributions to avoid!__
-<details>
-<summary>Debian (stable branch)</summary>
-
-\
-  **Unless you use Debian sid/testing, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly and packages tend to get outdated pretty quick.**
-</details>
-<details>
-<summary>Pop!_OS</summary>
-
-\
-  **The new Cosmic desktop variant lacks critical fixes for gaming and it is still currently in alpha. For now, there are better options.**
-</details>
-<details>
-<summary>SteamOS</summary>
-
-\
-  **Doesn't have an nvidia alternative and is not finished for **non-handheld devices**. If you REALLY need something similar, use Bazzite.**
-</details>
-<details>
-<summary>Manjaro</summary>
-
-\
-  **It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there.**
-</details>
-<details>
-<summary>Hacking/Cybersecurity distributions</summary>
-
-\
-  **Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware.**
-</details>
-<details>
-<summary>Obscure/outdated distributions</summary>
-
-\
-  **Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1.**
-</details>
-<details>
-<summary>Hobby/niche distributions</summary>
-
-\
-  **Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions.\
-  Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.**
-</details>
+| Name | Reason |
+| ------------- | ------------- |
+| **Debian (stable branch)** | Unless you use Debian sid/testing, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly and packages tend to get outdated pretty quick. |
+| **Pop!_OS** | The new Cosmic desktop variant lacks critical fixes for gaming and it is still currently in alpha. For now, there are better options. |
+| **SteamOS** | Doesn't have an nvidia alternative and is not finished for **non-handheld devices**. If you REALLY need something similar, use Bazzite. |
+| **Manjaro** | It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there. |
+| **Hacking/Cybersecurity distributions** | Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware. |
+| **Obscure/outdated distributions** | Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. |
+| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions. <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
 
 # __Installing Legion tools and drivers__ 
 ### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
 This allows you to use most, if not all the legion exclusive features on linux (fan control, panel overdrive, etc). Comes with a GUI to easily access these said features.   
 If you use Plasma and you want to have a tool that gives you the important options at a glance, I recommend using [PlasmaVantage](https://gitlab.com/Scias/plasmavantage) or Cinnamon's inspired counterpart from the [desktop plugin store](https://cinnamon-spices.linuxmint.com/applets/view/395)   
 ## Distro packages (highly recommended)
-- [**Debian/Ubuntu**](https://github.com/MrDuartePT/pacstall-programs/tree/lll-repo)
-- [**Fedora**](https://copr.fedorainfracloud.org/coprs/mrduarte/LenovoLegionLinux/)
-  - [Alternate link](https://mrduartept.github.io/LLL-pkg-repo)
-- **Arch Linux**:
-    - [lenovolegionlinux-git](https://aur.archlinux.org/packages/lenovolegionlinux-git)
-    - [lenovolegionlinux-dkms-git](https://aur.archlinux.org/packages/lenovolegionlinux-dkms-git)
-- **Gentoo**:
-    - [GURU Overlay](https://gitweb.gentoo.org/repo/proj/guru.git)
-    - [ebuild](https://gpo.zugaina.org/sys-firmware/lenovolegionlinux)
-- [**NixOS**](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=lenovo-legion)
+| Distribution | Links |
+| ------------- | ------------- |
+| Debian/Ubuntu | https://github.com/MrDuartePT/pacstall-programs/tree/lll-repo |
+| Fedora | https://copr.fedorainfracloud.org/coprs/mrduarte/LenovoLegionLinux/ \| [Alternate link](https://mrduartept.github.io/LLL-pkg-repo) |
+| Arch Linux | [lenovolegionlinux-git](https://aur.archlinux.org/packages/lenovolegionlinux-git) \| [lenovolegionlinux-dkms-git](https://aur.archlinux.org/packages/lenovolegionlinux-dkms-git) |
+| Gentoo | [GURU Overlay](https://gitweb.gentoo.org/repo/proj/guru.git) \| [ebuild](https://gpo.zugaina.org/sys-firmware/lenovolegionlinux) |
+| NixOS | https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=lenovo-legion |
 ## Manual Install Module
 The project's [github page](https://github.com/johnfanv2/LenovoLegionLinux?tab=readme-ov-file#bulb-instructions) should give you enough instructions to aid you in the process.\
 After it's done, to check if module is built and installed correctly, enter the following command
@@ -197,80 +62,44 @@ After it's done, to check if module is built and installed correctly, enter the 
 The output should show that legion_laptop and platform profile modules are loaded.
 
 # __App & Tools recommendation__
-### [Bazaar](https://flathub.org/en/apps/io.github.kolunmi.Bazaar)
-Front-end for managing Flatpak packages, if your distribution's package manager is not good enough for this use case. Used by default on Bazzite.
-### [Retrodeck](https://flathub.org/en/apps/net.retrodeck.retrodeck)
-An all-in-one emulation front-end that comes with the most popular emulators, pre-configured OOTB. You can configure and add BIOS files for each component through its configurator app.
-### [Easyeffects](https://flathub.org/en/apps/com.github.wwmm.easyeffects)
-Front-end equalizer for managing your microphone and speakers. Want to filter your microphone background sounds? Want to have a better sound quality? Then this app is for you.
-### [Warehouse](https://flathub.org/en/apps/io.github.flattool.Warehouse)
-All-in-one flathub package manager (install flatpaks, delete leftover data, manage flatpak data). A more technical variant of Bazaar.
-### [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal)
-Manage Flatpak permissions. Useful for non-KDE Plasma distributions.
-### [GearLever](https://flathub.org/en/apps/it.mijorus.gearlever)
-Front-end Appimage manager. Allows "installing" said packages, without needing to fetch them in the file manager.
-### [PeaZip](https://flathub.org/en/apps/io.github.peazip.PeaZip)   
-A fantastic WinRar/7-Zip alternative.
+| App  | Description |
+| ------------- | ------------- |
+| [Bazaar](https://flathub.org/en/apps/io.github.kolunmi.Bazaar) | Front-end for managing Flatpak packages, if your distribution's package manager is not good enough for this use case. Used by default on Bazzite. |
+| [Retrodeck](https://flathub.org/en/apps/net.retrodeck.retrodeck) | An all-in-one emulation front-end that comes with the most popular emulators, pre-configured out of the box. You can configure and add BIOS files for each component through its configurator app. |
+| [EasyEffects](https://flathub.org/en/apps/com.github.wwmm.easyeffects) | Front-end equalizer for managing your microphone and speakers. Useful for filtering microphone background noise and improving overall audio quality. |
+| [Warehouse](https://flathub.org/en/apps/io.github.flattool.Warehouse) | All-in-one Flathub package manager for installing Flatpaks, deleting leftover data, and managing Flatpak data. A more technical alternative to Bazaar. |
+| [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) | Manage Flatpak permissions. Especially useful on non-KDE Plasma distributions. |
+| [Gear Lever](https://flathub.org/en/apps/it.mijorus.gearlever) | Front-end AppImage manager that allows installing and managing AppImage packages without manually handling them in the file manager. |
+| [PeaZip](https://flathub.org/en/apps/io.github.peazip.PeaZip) | A powerful and user-friendly alternative to WinRAR and 7-Zip for archive management. |
 # __Battery saving tools__
 The tool that comes bundled with your distribution of choice should be good enough. For advanced users only!
 > [!WARNING]
 > Some of the tools will not work together with the rest (exceptions may apply). Make sure you remove all the tools besides the one you want to currently use.\
 > Do **NOT** use configuration files from laptops you don't **OWN**. This may cause severe issues with your hardware! You have been warned.
-### Tuned 
-A mix between power profiles daemon and TLP. Easily integrated with all desktops that feature Power profiles switching and can be customized to your needs. Used on Fedora & Bazzite by default.
-[More info](https://github.com/redhat-performance/tuned)
-### Power Profiles Daemon
-Used in majority of distros. Plays well with pstate scalers and any hardware in general. Not as powerful as TLP but it gets the job done. Conflicts with the rest of the tools besides powertop
-[More info](https://gitlab.freedesktop.org/upower/power-profiles-daemon)
-### TLP 
-A shell script that applies extensive configurations based on battery or AC. Will cause issues if incorrectly configured. Conflicts with other tools.   
-- **Debian/Ubuntu**:
-```sudo apt install tlp```
-- **Fedora**:
-```sudo dnf install tlp```
-- **Arch Linux**:
-```sudo pacman -S tlp```
-   
-For easier tool access, [install the gui version](https://github.com/d4nj1/TLPUI)   
-After that we can configure TLP.   
-Open TLPUI and change your settings(Strictly optional. Default settings are fine) . Enable the tool by typing in terminal:   
-```sudo systemctl enable tlp.service && sudo systemctl start tlp.service```
-### Auto-Cpufreq
-A simple script that changes how the cpu should scale depending if you are on AC or Battery. Plays well with pstate, but it may cause issues with some hardware.
-- **Debian/Ubuntu**:
-```git clone https://github.com/adnanhodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer```
-- **Fedora**:
-```git clone https://github.com/adnanhodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer```
-- **Arch Linux**:
-```sudo pacman -S auto-cpufreq```
-   
-[More Info](https://github.com/AdnanHodzic/auto-cpufreq/tree/fdb20f5ea2f94ed9146299b87ad03dc1f64c79ec#auto-cpufreq-installer)
-### Powertop 
-A shell script tool that allows you to optimize some parts of the hardware to go on a low power state when not in use. I'd recommend using it only to check your power draw, as the optimization feature is already applied by other power saving tools.
-- **Debian/Ubuntu**:
-```sudo apt install powertop```
-- **Fedora**:
-```sudo dnf install powertop```
-- **Arch Linux**:
-```sudo pacman -S powertop```
 
-After installing it, you can use the app by typing:   
-```sudo powertop```   
-If you want to use it to optimize the hardware power usage (power-profiles/auto-cpufreq ONLY), run this command:   
-```sudo powertop --calibrate && sudo powertop --auto-tune```
-
+| Tool | Description |
+| ------------- | ------------- |
+| [Tuned](https://github.com/redhat-performance/tuned) | A mix between Power Profiles Daemon and TLP. Easily integrates with desktop environments that support power profile switching and can be customized to your needs. Used by default on Fedora and Bazzite. |
+| [Power Profiles Daemon](https://gitlab.freedesktop.org/upower/power-profiles-daemon) | Default power profile management service used by most Linux distributions. Works well with `pstate` CPU scaling and most hardware configurations. Simpler than TLP, but effective for general usage. Conflicts with most other power management tools except Powertop. |
+| [TLP](https://linrunner.de/tlp/index.html) | Advanced power management tool that applies extensive optimizations depending on whether the system is running on battery or AC power. Highly configurable, but incorrect setup can cause issues. Conflicts with other power management tools. GUI frontend available through [TLPUI](https://github.com/d4nj1/TLPUI). |
+| [Auto-Cpufreq](https://github.com/AdnanHodzic/auto-cpufreq) | Lightweight automatic CPU power optimization tool that dynamically adjusts CPU scaling and governors based on battery or AC status. Works well with `pstate`, though some hardware may experience compatibility issues. |
+| [Powertop](https://wiki.archlinux.org/title/Powertop) | Terminal-based power analysis and tuning utility for monitoring system power consumption and enabling hardware power-saving optimizations. Best used for diagnosing power draw, since most automatic optimizations are already handled by other tools. |
 # __Wine front-ends__
 [Wine](https://www.winehq.org/) is a special tool that allows running Windows apps in Linux. This sparked the creation of proton, that is actively used for games.
-### [Lutris](https://lutris.net/)
-Allows installing, configuring games & apps in one-in-all tool. Comes with features like automatic installation of games through community patches and importing game libraries from steam, GOG and Epic Games Store. Avoid using install scripts as all of them rely on the outdated wine-ge runner.
-### [Heroic game launcher](https://heroicgameslauncher.com/) 
-Allows installing & configuring games & apps in one-in-all tool from Epic Games Store, Humble, Amazon, GoG, Origin, Ubisoft Connect and local games/backups.
-### [Faugus-Launcher](https://github.com/Faugus/faugus-launcher) 
-A simple, easy to use launcher that takes advantage of [UMU](https://github.com/Open-Wine-Components/umu-launcher). It's not as feature complete as Lutris, but it gets the job done without extra shenanigans.
-### [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
-Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools, as well as a special prefix with dotnet frameworks preinstalled. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive. Use this as a last resort.
-
+| App | Description |
+| ------------- | ------------- |
+| [Lutris](https://lutris.net/) | Unified game and application launcher for Linux that supports installing, configuring, and managing games from multiple sources. Features community installation scripts and library imports from Steam, GOG, and Epic Games Store. Avoid using older install scripts, as many still rely on outdated Wine-GE runners. |
+| [Heroic Games Launcher](https://heroicgameslauncher.com/) | Open-source launcher for managing games from Epic Games Store, GOG, Amazon Games, Humble Bundle, Ubisoft Connect, Origin, and local backups. Includes built-in Wine and Proton management tools. |
+| [Faugus Launcher](https://github.com/Faugus/faugus-launcher) | Lightweight and easy-to-use launcher built around UMU. Less feature-rich than Lutris, but provides a simpler and more straightforward experience without unnecessary complexity. |
+| [Port-Proton](https://github.com/Castro-Fidel/PortWINE) | User-friendly launcher focused on simplifying Wine game setup and launcher installation. Includes a custom prefix with preinstalled .NET frameworks and various configuration tools. However, it has some usability limitations, slower startup times, and fewer advanced customization options compared to alternatives. Best used as a fallback option. |
 # __General bugs and fixes__
+<details>
+<summary>Fix laptop speakers not working (Gen 10 Legions)</summary>
+  
+* You will require [this special driver](https://github.com/marco-giunta/legion-pro7-gen10-audio), until it gets pushed in the kernel.
+
+</details>
+
 <details>
 <summary>System swappiness (if you have >= 16GB ram)</summary>
   
@@ -317,34 +146,20 @@ Formerly PortWINE. It's simple to use, can auto-install game launchers and has e
 ```for p in /sys/class/drm/*/status; do con=${p%/status}; echo -n "${con#*/card?-}: "; cat $p; done```
    
 For the below commands, replace **{display_id}** with the output of the connected display from the command in number 4.
-### For systemd-boot
-```sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e'```
-### For GRUB:
-```sudo nano /etc/default/grub```, add ```drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e``` to GRUB_CMDLINE_LINUX_DEFAULT
 
-Then run either ```sudo update-grub``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```    
-Reboot.   
-### For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following (make sure you replace {display_id} with the output from number 4, as well as path-to-file with the actual path):
-```
-sudo mkdir -p /etc/firmware/edid
-sudo cp (path-to-file)/edid.bin /etc/firmware/edid
-sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin
-sudo rpm-ostree kargs --append-if-missing=video={display_id}:e
-```
-**In case it hasn't fixed yet, run these 2 as well:**
-```   
-sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf
-sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware 
-```
+| Name | Command |
+|-------------|-------------|
+| **systemd-boot** | `sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e'` |
+| **GRUB** | `sudo nano /etc/default/grub`<br>Add `drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e` to `GRUB_CMDLINE_LINUX_DEFAULT`<br><br>Then run one of the following:<br>`sudo update-grub`<br>OR<br>`sudo grub2-mkconfig -o /boot/grub2/grub.cfg` |
+
+  
+Reboot. <br>
+For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following (make sure you replace {display_id} with the output from number 4, as well as path-to-file with the actual path):
+| Name | Command |
+|------|---------|
+| **Immutable/Atomic** | `sudo mkdir -p /etc/firmware/edid`<br>`sudo cp (path-to-file)/edid.bin /etc/firmware/edid`<br>`sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin`<br>`sudo rpm-ostree kargs --append-if-missing=video={display_id}:e`<br><br>**In case it hasn't fixed yet, run these 2 as well:**<br>`sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf`<br>`sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware` |
 </details>
 
 
 > [!WARNING]
 > UNDER NO CIRCUMSTANCE, DO NOT INCREASE/DECREASE THE RESOLUTION OF YOUR SCREEN/REFRESH RATE PAST YOUR SPECS! DOING SO WILL CAUSE SEVERE ISSUES!
-
-<details>
-<summary>Fix laptop speakers not working (Gen 10 Legions)</summary>
-  
-* You will require [this special driver](https://github.com/marco-giunta/legion-pro7-gen10-audio), until it gets pushed in the kernel.
-
-</details>
