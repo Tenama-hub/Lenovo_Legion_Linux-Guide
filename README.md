@@ -25,7 +25,7 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 | **[Ubuntu](https://ubuntu.com/download) <br> / <br> [Kubuntu](https://kubuntu.org/)** | • Ubuntu ships with GNOME, Kubuntu with KDE Plasma.<br>• Nvidia drivers and codecs can be installed during setup.<br>• Huge user base and strong documentation.<br>• Secure Boot configured by default.<br>• Available in both rolling-style interim releases and LTS versions. | • Heavy focus on Snap packages, which may cause compatibility or performance concerns for some users.<br>• Non-LTS releases may occasionally introduce system instability. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/ubuntu_post_install_guide.md) |
 | **[Linux Mint](https://linuxmint.com/)** | • Comes with Cinnamon/XFCE/Mate (layout resemble Windows 7/10).<br>• Ships with many useful tools pre-installed.<br>• Cinnamon edition supports customizable touchpad gestures.<br>• Stable release model focused on reliability. | • Uses older package bases and technologies, which may affect newer hardware support.<br>• Still relies on X11, which is behind certain modern features (dual screens may not work as intended for example).<br>• Secure Boot setup requires manual signing post-install. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md) |
 
-## If you feel adventurous...
+If you feel adventurous...
 | Name | Pros | Cons | Links |
 | ------------- | ------------- | ------------- | ------------- |
 | **[Bazzite](https://bazzite.gg/)** | • Comes with Plasma/Gnome by default<br>• Pre-installed Steam, Nvidia drivers and codecs<br>• Can be used for any use case, not just gaming<br>• Great alternative to SteamOS<br>• Very hard to break and requires little to no maintenance due to its "atomic" nature<br>• Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick | • Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox/Kontainer.<br>• You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.<br>• Support outside their official Discord leaves more to be desired.<br>• No secure boot post-install. Needs to be signed manually (can be done through Ujust) |  |
@@ -43,11 +43,13 @@ Based on my own experience + community feedback. Treat this as a way to begin yo
 | **Obscure/outdated distributions** | Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. |
 | **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Their soley purpose is to fill a niche that can be accomplished on any modern, mainstream distributions. <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
 
-# __Installing Legion tools and drivers__ 
-### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
+# __Installing Legion tools and drivers (LEGACY)__ 
+**As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver. Kernel 7.1 and up should introduce native fan control instead of relying on this.** <br>
+**This driver is now marked as LEGACY, due to it being slowly introduced with each kernel update. Tools that depends on this driver may no longer work.**
 This allows you to use most, if not all the legion exclusive features on linux (fan control, panel overdrive, etc). Comes with a GUI to easily access these said features.   
 If you use Plasma and you want to have a tool that gives you the important options at a glance, I recommend using [PlasmaVantage](https://gitlab.com/Scias/plasmavantage) or Cinnamon's inspired counterpart from the [desktop plugin store](https://cinnamon-spices.linuxmint.com/applets/view/395)   
 ## Distro packages (highly recommended)
+These packages are maintained by the community.
 | Distribution | Links |
 | ------------- | ------------- |
 | Debian/Ubuntu | https://github.com/MrDuartePT/pacstall-programs/tree/lll-repo |
