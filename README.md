@@ -73,6 +73,7 @@ The output should show that legion_laptop and platform profile modules are loade
 | [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) | Manage Flatpak permissions. Especially useful on non-KDE Plasma distributions. |
 | [Gear Lever](https://flathub.org/en/apps/it.mijorus.gearlever) | Front-end AppImage manager that allows installing and managing AppImage packages without manually handling them in the file manager. |
 | [PeaZip](https://flathub.org/en/apps/io.github.peazip.PeaZip) | A powerful and user-friendly alternative to WinRAR and 7-Zip for archive management. |
+| [WinBoat](https://www.winboat.app/)  | A powerful app that allows running Windows apps through a VM that seamlessly integrates with your system. The VM is lightweight and easy to configure. It (currently) does not support GPU pass-through, so GPU accelerated apps (including games) will not run or will run but slower. |
 # __Battery saving tools__
 The tool that comes bundled with your distribution of choice should be good enough. For advanced users only!
 > [!WARNING]
