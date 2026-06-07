@@ -34,14 +34,14 @@ If you feel adventurous...
 # __Distributions to avoid!__
 | Name | Reason |
 | ------------- | ------------- |
-| **Debian (stable branch)** | Unless you use Debian sid/testing, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly and packages tend to get outdated pretty quick. |
-| **Pop!_OS** | The new Cosmic desktop variant lacks critical fixes for gaming and it is still currently in alpha. For now, there are better options. |
-| **Ubuntu** | I have mixed feelings about this. A lot of decisions are tailored for enterprise solutions + pushing for AI (unlike Windows, it could be local). Derivatives shouldn't be affected, but I wouldn't take any chances. If that doesn't affect you, the distro should be fine.|
+| **Debian (stable branch)** | Unless you use Debian Sid/testing, updates are released very slowly and packages tend to get outdated pretty quick. |
+| **Pop!_OS** | The new Cosmic desktop variant lacks critical fixes and it is still currently in alpha. For now, there are better options. |
+| **Ubuntu** | A lot of decisions are tailored for enterprise solutions + [pushing for AI](https://www.zdnet.com/article/ubuntu-26-04-is-os-for-ai-agentic-era-says-canonical-mark-shuttleworth-why/). Snap packages are okay, but some apps aren't 100% officially supported and come with their own issues (especially if you remove snap support on Ubuntu. Kubuntu and the derivatives can safely remove snaps.)|
 | **SteamOS** | Doesn't have an nvidia alternative and is not finished for **non-handheld devices**. If you REALLY need something similar, use Bazzite. |
 | **Manjaro** | It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there. |
 | **Hacking/Cybersecurity distributions** | Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware. |
 | **Obscure/outdated distributions** | Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. |
-| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
+| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with problems of their own, such as: unorthodox way of handling packages (some packages are updates often more than others, for example), low-quality in-house tools, kernel problems, questionable community, low amount of maintainers etc. <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
 
 # __Installing Legion tools and drivers (LEGACY)__ 
 **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver. Kernel 7.1 and up should introduce native fan control instead of relying on this.** <br>
@@ -66,7 +66,7 @@ The output should show that legion_laptop and platform profile modules are loade
 # __App & Tools recommendation__
 | App  | Description |
 | ------------- | ------------- |
-| [Bazaar](https://flathub.org/en/apps/io.github.kolunmi.Bazaar) | Front-end for managing Flatpak packages, if your distribution's package manager is not good enough for this use case. Used by default on Bazzite. |
+| [Bazaar](https://flathub.org/en/apps/io.github.kolunmi.Bazaar) | Front-end for managing Flatpak packages, if your distribution's package manager app is not good enough for this use case. Used by default on Bazzite. |
 | [Retrodeck](https://flathub.org/en/apps/net.retrodeck.retrodeck) | An all-in-one emulation front-end that ships with the most popular emulators. You can configure and add BIOS files for each component through its configurator app. |
 | [EasyEffects](https://flathub.org/en/apps/com.github.wwmm.easyeffects) | Front-end equalizer for managing your microphone and speakers. Useful for filtering microphone background noise and improving overall audio quality. |
 | [Warehouse](https://flathub.org/en/apps/io.github.flattool.Warehouse) | All-in-one Flathub package manager for installing Flatpaks, deleting leftover data, and managing Flatpak data. A more technical alternative to Bazaar. |
