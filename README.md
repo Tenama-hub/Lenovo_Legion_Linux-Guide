@@ -3,18 +3,18 @@ Feel free to join our [discord group as well](https://discord.gg/legionseries).
 
 # __General advice and websites recommendation__
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
-* Don't install packages from the internet unless necessary. Always trust your SOFTWARE/PACKAGE MANAGER bundled with your distribution.
+* Don't install packages from the internet unless necessary. Always trust your **SOFTWARE/PACKAGE MANAGER** bundled with your distribution.
 * Don't jump the distrohop wagon whenever a new shiny distribution claims to give you better this and better that. Many of those benefits are very negligible and only harm the Linux ecosystem by fragmenting it even further. Use distributions that are popular, mainstream, well-known and come from reputable sources. You can game on any distro and apply the same tweaks on a "non-gaming" distribution.
 * Don't rely on custom kernels to give you significant performance gains. Using the kernel bundled with your distribution is more than enough.
 * Don't run scripts that claim to give you more performance, especially if they were not tested or come from a untrusted source/maintainer. Those are the equivalent of running registry tweaks on windows to get free fps (aka a scam.)
-* Don't rely too much on AI tools to debug your problems, unless you know and read carefully what it gives you instead of blindly copy-pasting.
+* Don't rely too much on AI tools to debug your problems, unless you know and read carefully what it gives you instead of blindly copy-pasting. You will have a hard time.
   
 To check if your games work on linux, these websites will help you keep yourself updated:   
-https://areweanticheatyet.com/   
-https://www.protondb.com/   
+https://areweanticheatyet.com/<br>
+https://www.protondb.com/<br>
 https://appdb.winehq.org/
 ### Websites for linux news (desktops, distributions etc)
-https://9to5linux.com/   
+https://9to5linux.com/<br>
 https://gamingonlinux.com/
 # __Distribution recommendation__
 Based on my own experience + community feedback. Treat this as a way to begin your Linux journey. These are mainstream, well-known, supported linux distributions with huge userbases and documentation.
@@ -41,11 +41,13 @@ If you feel adventurous...
 | **Manjaro** | It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there. |
 | **Hacking/Cybersecurity distributions** | Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware. |
 | **Obscure/outdated distributions** | Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. |
-| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums (forums being just a Discord server). They also come with problems of their own, such as: unorthodox way of handling packages (some packages are updates often more than others, for example), low-quality in-house tools, kernel problems, questionable community, low amount of maintainers etc. <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
+| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have proper support outside their forums (forums being just a Discord server). They also come with problems of their own, such as: unorthodox way of handling packages (some packages are updates often more than others, for example), low-quality in-house tools, kernel problems, questionable community, low amount of maintainers etc. <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
 
 # __Installing Legion tools and drivers (LEGACY)__ 
-**As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver. Kernel 7.1 and up should introduce native fan control instead of relying on this.** <br>
-**This driver is now marked as LEGACY, due to it being slowly introduced with each kernel update. Tools that depends on this driver may no longer work.**
+> [!WARNING]
+> As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver. Kernel 7.1 and up should introduce native fan control too.\
+> This driver is now marked as LEGACY, due to it being slowly introduced with each kernel update. Tools that depend on this driver may no longer work.
+
 This allows you to use most, if not all the legion exclusive features on linux (fan control, panel overdrive, etc). Comes with a GUI to easily access these said features.   
 If you use Plasma and you want to have a tool that gives you the important options at a glance, I recommend using [PlasmaVantage](https://gitlab.com/Scias/plasmavantage) or Cinnamon's inspired counterpart from the [desktop plugin store](https://cinnamon-spices.linuxmint.com/applets/view/395)   
 ## Distro packages (highly recommended)
@@ -99,23 +101,24 @@ The tool that comes bundled with your distribution of choice should be good enou
 <details>
 <summary>Fix laptop speakers not working (Gen 10 Legions)</summary>
   
-* You will require [this special driver](https://github.com/marco-giunta/legion-pro7-gen10-audio), until it gets pushed in the kernel.
+* You will need [this special driver](https://github.com/marco-giunta/legion-pro7-gen10-audio), until it gets pushed in the kernel.
 
 </details>
 
 <details>
 <summary>System swappiness (if you have >= 16GB ram)</summary>
   
-* Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.
-* ```sudo nano /etc/sysctl.conf```
+* Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.<br>
+ ```sudo nano /etc/sysctl.conf```
 * Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
 </details>
 <details>
 <summary>Zram tweaks</summary>
 
+**This should be already tweaked by the majority of mainstream distributions.** <br>
 * (Make sure your distributon has zram enabled by running ```zramctl``` in the terminal!)
-* If you have games crashing due to memory leaks, tweaking zram would help ameliorate the problem. To do so, do the following:
-* ```sudo nano /etc/systemd/zram-generator.conf```
+* If you have games crashing due to memory leaks, tweaking zram would help ameliorate the problem. To do so, do the following: <br>
+ ```sudo nano /etc/systemd/zram-generator.conf```
 * Inside the new configuration file, paste this:   
 ```[zram0]```\
 ```compression-algorithm=zstd```\
@@ -126,7 +129,7 @@ The tool that comes bundled with your distribution of choice should be good enou
 <summary>Bad speakers quality</summary>
 
 * If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
-* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. This method may cause issues with external speakers, so be wary!\
+* If you don't want to use Easyeffects for your legion laptop, download & extract the pipewire archive in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. This method may cause issues with external speakers, so be wary!<br>
   **Restart pipewire and change your sound profile in settings!**
 </details>
 <details>
