@@ -1,6 +1,6 @@
 # Fedora post-install guide
 If you are lazy and you want to build your own install script, [click here](https://nattdf.streamlit.app/)<br>
-Honorable mentions: [Noble guide](https://github.com/wz790/Fedora-Noble-Setup) <br>
+Honorable mentions: [Noble guide](https://github.com/wz790/Fedora-Noble-Setup), [Fedora Post Install guide](https://github.com/devangshekhawat/Fedora-44-Post-Install-Guide) <br>
 | Tweak Name | Command/Link |
 | ------------- | ------------- |
 | **Enable 3rd party repositories** | Enable them during the "welcome" post-install or use the command below:<br>`sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm && sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`  |
